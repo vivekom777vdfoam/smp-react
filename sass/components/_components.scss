@@ -1,0 +1,22 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Components design.
+ */
+
+.flex { display: flex !important; }
+.container {
+  display: block;
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.row {
+  display: inline-block;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}

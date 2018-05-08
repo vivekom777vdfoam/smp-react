@@ -1,0 +1,39 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Form SCSS
+ */
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+textarea {
+  height: auto;
+  max-width: 100%;
+  padding: 19px 25px;
+  border: 2px solid #DDD;
+  background-color: $white;
+  font-size: 24px;
+  line-height: normal;
+  @include border-radius(50px);
+  @include box-shadow(none);
+  &.throbbing {
+    background-repeat: no-repeat;
+  }
+  &.error {
+    border-color: $red;
+    &:focus { border-color: $red; }
+  }
+}
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+textarea:focus {
+  border-color: #F5891F;
+  @include box-shadow(0 2px 4px rgba(0, 0, 0, .2));
+}

@@ -1,0 +1,25 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Header SCSS.
+ */
+
+.header {
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+}
+
+.main-menu {
+  float: right;
+  ul {
+    list-style: none;
+    li {
+      float: left;
+    }
+  }
+}
